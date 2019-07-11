@@ -23,6 +23,8 @@ Here, you might get conflicts. Resolve those, check that the app is working as e
 		git commit -am "Appropriate, infromathttps://materializecss.comwive commit message"
 		git push
 
+Also, before you commit, try to close and restart your server to see if the app is working after the restart also (some breaking issues appear on restart).
+
 ---
 
 ### On git
