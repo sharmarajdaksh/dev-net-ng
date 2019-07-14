@@ -1,0 +1,18 @@
+@import '../../styles';
+
+.nav-logo {
+    font-family: 'ubuntu';
+    font-weight: 600;
+    font-size: 1.5rem;
+
+    div .logo-self {
+		margin-right: 5px;
+    }
+
+}
+
+.nav-wrapper {
+	@media screen and (min-width: 993px) {
+        padding: 0 50px;
+    }
+}

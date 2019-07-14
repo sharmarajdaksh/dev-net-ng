@@ -13,6 +13,10 @@ export class AppComponent implements OnInit {
 
 const onInitMaterializeJs = () => {
 	// For Collapsible List
-	const elems = document.querySelectorAll('.collapsible');
-	const instances = M.Collapsible.init(elems);
+	let elems: any; 
+	let instances:any;
+	elems = document.querySelectorAll('.collapsible');
+	instances = M.Collapsible.init(elems);
+	elems = document.querySelectorAll('.sidenav');
+    instances = M.Sidenav.init(elems);
 };
