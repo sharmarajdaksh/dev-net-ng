@@ -1,0 +1,16 @@
+.dark {
+	&-background {
+		background: #222;
+	}
+	&-font-color {
+		color: #fafafa;
+	}
+}
+.light {
+	&-background {
+		background: #fafafa;
+	}
+	&-font-color {
+		color: #222;
+	}
+}

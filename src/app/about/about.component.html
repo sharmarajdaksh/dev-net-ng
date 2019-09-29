@@ -1,0 +1,90 @@
+<div
+    class="container-custom"
+    [ngClass]="darkMode ? 'dark-background' : 'light-background'"
+    [class.dark-font-color]="darkMode"
+    [class.light-font-color]="!darkMode"
+    style="text-align: justify"
+>
+    <h2 style="margin-top: 0;">
+        DevNet is a community for developers, by developers.
+    </h2>
+    <br />
+    <hr />
+    <br />
+    <div class="col s12">
+        <p class="flow-text">
+            DevNet is a platform for developers and knowledge workers everywhere
+            to connect, share their knowledge, and to exhibit their professional
+            skills and achievements. By allowing all users to share information,
+            DevNet creates a thriving and engaging community of ideas and
+            discussions.
+        </p>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col m8 s12" style="padding-left: 0;">
+            <div
+                style="padding: 2rem; margin: 0px"
+                [ngClass]="darkMode ? 'grey darken-3' : 'grey lighten-3'"
+            >
+                <h3 style="margin-top: 0">Our Goal :</h3>
+                <br />
+                <hr />
+                <br />
+                <p class="flow-text">
+                    Modern day coding problems are not ones that can be solved
+                    on our own. As the technology is growing exponentially it
+                    becomes quite difficult to cope up with every latest
+                    technology in various fields. So every developer in the
+                    world need some kind of a platform to connect with various
+                    other developers which can help him find solutions.
+                </p>
+                <p class="flow-text">
+                    The main objective of building DevNet is to connect
+                    developers from everywhere. It will provide users a platform
+                    to network, grow professionaly as developers, and perhaps
+                    achieve solutions to great problems in the modern world
+                    through the developed culture of discussiona and
+                    knowledge-sharing.
+                </p>
+            </div>
+        </div>
+        <div class="col m4 s12" style="padding-right: 0;">
+            <img src="assets/images/network.jpeg" alt="Network" />
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <h3>Our Developers:</h3>
+        <br />
+        <hr />
+        <br />
+        <div class="col s12 m6 l4" *ngFor="let dev of developers">
+            <div
+                class="card"
+                [ngClass]="darkMode ? 'grey darken-3' : 'grey lighten-3'"
+            >
+                <div class="card-image" style="padding-top: 1.5rem;">
+                    <img
+                        src="{{ imageBaseAddress + dev.imageName }}"
+                        style="border-radius: 50%; max-height: 200px; max-width: 200px; margin: auto;"
+                    />
+                </div>
+                <div class="card-content">
+                    <span class="card-title">{{ dev.name }}</span>
+                    <p>
+                        {{ dev.description }}
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a
+                        href="{{ dev.devnetProfileLink }}"
+                        class="grey-text text-darken-2"
+                        >Find {{ dev.name.split(' ')[0] }} on DevNet</a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+</div>

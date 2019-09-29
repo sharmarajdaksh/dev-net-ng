@@ -1,27 +1,73 @@
-<nav>
-    <div class="nav-wrapper grey lighten-5 z-depth-1">
-        <a href="#!" class="brand-logo nav-logo grey-text text-darken-2">
-            <div class="valign-wrapper center-align">
-                <span class="logo-self">< / > DevNet</span>
-            </div>
-        </a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger grey-text"
-            ><i class="material-icons">menu</i></a
-        >
-        <ul class="right hide-on-med-and-down">
-            <li>
-                <a href="#" class="grey-text text-darken-2">Login</a>
-            </li>
-            <li>
-                <a href="#" class="grey-text text-darken-2">About</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+<header class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper grey lighten-3 z-depth-1">
+            <a
+                [routerLink]="['/']"
+                class="brand-logo nav-logo grey-text text-darken-2"
+            >
+                <div class="valign-wrapper center-align">
+                    <span class="logo-self">< / > DevNet</span>
+                </div>
+            </a>
+            <a
+                href="#"
+                data-target="mobile-demo"
+                class="sidenav-trigger grey-text"
+                ><i class="material-icons">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a
+                        [routerLink]="['/auth']"
+                        class="grey-text"
+                        routerLinkActive="text-darken-3"
+                        >Login</a
+                    >
+                </li>
+                <li>
+                    <a
+                        [routerLink]="['/about']"
+                        class="grey-text"
+                        routerLinkActive="text-darken-3"
+                        >About</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="grey-text text-darken-2"
+                        style="cursor: pointer;"
+                        title="Toggle Night Mode"
+                        (click)="onToggleNightMode()"
+                        ><i class="material-icons">brightness_6</i></a
+                    >
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
-<ul class="sidenav" id="mobile-demo">
-    <li><a href="#" class="grey-text text-darken-2">Login</a></li>
+<ul class="sidenav gray lighten-3" id="mobile-demo">
+    <li class="brand-logo nav-logo grey-text">
+        <div class="valign-wrapper center-align">
+            <span class="logo-self" style="margin-left: 2rem;"
+                >< / > DevNet</span
+            >
+        </div>
+    </li>
+    <br />
     <li>
-        <a href="#" class="grey-text text-darken-2">About</a>
+        <a [routerLink]="['/auth']" class="grey-text text-darken-2">Login</a>
+    </li>
+    <li>
+        <a [routerLink]="['/about']" class="grey-text text-darken-2">About</a>
+    </li>
+    <li>
+        <a
+            class="grey-text text-darken-2"
+            style="cursor: pointer;"
+            title="Toggle Night Mode"
+            (click)="onToggleNightMode()"
+            ><i class="material-icons">brightness_6</i> Toggle Dark Mode</a
+        >
     </li>
 </ul>
