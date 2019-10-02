@@ -1,8 +1,11 @@
-<div style="width: 100%; height: 88vh;">
+<div style="width: 100%; height: 10vh;">
     <div class="container">
         <div class="row">
-            <div class="col s12 m8 l4 offset-m3 offset-l4">
-                <form class="card col s12" style="padding: 2rem; margin-top: 2rem;">
+            <div class="col s12 m4 offset-m4">
+                <form
+                    class="card col s12"
+                    style="padding: 2rem; margin-top: 2rem;"
+                >
                     <h4 style="text-align: center">
                         {{ isLoginMode ? 'Login' : 'Sign Up' }}
                     </h4>
@@ -41,12 +44,15 @@
                     </div>
                     <p>
                         {{ isLoginMode ? 'Not' : 'Already' }} a member?
-                        <a style="cursor: pointer" (click)="onToggleLoginMode()">{{
-                            isLoginMode ? 'Sign up' : 'Login'
-                        }}</a
+                        <a
+                            style="cursor: pointer"
+                            (click)="onToggleLoginMode()"
+                            >{{ isLoginMode ? 'Sign up' : 'Login' }}</a
                         >.
-					</p>
-					<span style="color: red;" *ngIf="errorMessage">{{errorMessage}}</span>
+                    </p>
+                    <span style="color: red;" *ngIf="errorMessage">{{
+                        errorMessage
+                    }}</span>
                 </form>
             </div>
         </div>

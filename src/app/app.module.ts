@@ -16,6 +16,7 @@ import * as fromApp from './store/app.reducer';
 import { SharedEffects } from './shared/store/shared.effects';
 import { FooterComponent } from './footer/footer.component';
 import { AuthComponent } from './auth/auth.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
 	declarations: [
@@ -23,7 +24,8 @@ import { AuthComponent } from './auth/auth.component';
 		TestComponentComponent,
 		NavComponent,
 		AboutComponent,
-		FooterComponent
+		FooterComponent,
+		HomeComponent
 	],
 	imports: [
 		BrowserModule,

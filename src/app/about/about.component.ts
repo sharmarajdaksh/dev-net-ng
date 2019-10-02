@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Store } from '@ngrx/store';
 
 import * as fromApp from '../store/app.reducer';
@@ -11,8 +11,8 @@ import { map } from 'rxjs/operators';
 	templateUrl: './about.component.html',
 	styleUrls: ['./about.component.scss']
 })
-export class AboutComponent implements OnInit {
-	imageBaseAddress = 'assets/images/developers/'
+export class AboutComponent implements OnInit, OnDestroy {
+	imageBaseAddress = 'assets/images/developers/';
 	developers = [
 		{
 			name: 'Charanjit Singh',
@@ -49,5 +49,9 @@ export class AboutComponent implements OnInit {
 			.subscribe((darkMode: boolean) => {
 				this.darkMode = darkMode;
 			});
+	}
+
+	ngOnDestroy() {
+		this.nightModeSubscription.unsubscribe();
 	}
 }

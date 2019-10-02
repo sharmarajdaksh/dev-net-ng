@@ -1,0 +1,39 @@
+<div
+	class="parallax-container"
+    [ngClass]="{'home-light': !darkMode, 'home-dark': darkMode}"
+>
+    <div class="row container right-align" style="margin-top: 10rem;">
+        <div>
+            <h1 class="header white-text">
+				< / > DevNet
+            </h1>
+            <br />
+            <h5 class="white-text">
+                a platform for developers and knowledge workers everywhere.
+            </h5>
+            <h4 class="white-text">
+                because knowledge deserves to be shared.
+            </h4>
+            <br />
+            <h3 style="margin-top: 0;">
+                <span class="white-text">
+                    Share .
+                </span>
+                <span class="white-text">
+                    Connect .
+                </span>
+                <span class="white-text">
+                    Grow .
+                </span>
+            </h3>
+            <br />
+            <br />
+            <a
+                class="waves-effect hoverable waves-light btn white blue-text text-lighten-1 lighten-1"
+                [routerLink]="['/auth']"
+            >
+                Login or Signup
+            </a>
+        </div>
+    </div>
+</div>

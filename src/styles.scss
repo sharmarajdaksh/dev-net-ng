@@ -7,10 +7,10 @@ $core-font: 'Montserrat', 'Roboto';
 $break-mobile: 601px;
 
 .container-custom {
-	margin: 0 auto;
-	padding-top: 5rem;
+    margin: 0 auto;
+    padding-top: 5rem;
     max-width: 1280px;
-	width: 90%;
+    width: 90%;
 }
 @media only screen and (min-width: 601px) {
     .container-custom {
@@ -24,4 +24,4 @@ $break-mobile: 601px;
 }
 
 // navbar-color : grey-lighten-3
-// main-accent-light-blue: #42a5f5
+// main-accent-light-blue: #42a5f5 or rgb(66, 165, 245)}

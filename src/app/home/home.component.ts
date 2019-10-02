@@ -6,15 +6,16 @@ import * as fromApp from '../store/app.reducer';
 import { map } from 'rxjs/operators';
 
 @Component({
-	selector: 'app-auth',
-	templateUrl: './auth.component.html',
-	styleUrls: ['./auth.component.scss']
+	selector: 'app-home',
+	templateUrl: './home.component.html',
+	styleUrls: ['./home.component.scss']
 })
-export class AuthComponent implements OnInit, OnDestroy {
-	isLoginMode = true;
-	errorMessage = '';
+export class HomeComponent implements OnInit, OnDestroy {
 	darkMode: boolean;
 	nightModeSubscription: Subscription;
+
+	elems: any;
+	instances: any;
 
 	constructor(private store: Store<fromApp.AppState>) {}
 
@@ -25,13 +26,13 @@ export class AuthComponent implements OnInit, OnDestroy {
 			.subscribe((darkMode: boolean) => {
 				this.darkMode = darkMode;
 			});
-	}
 
-	onToggleLoginMode() {
-		this.isLoginMode = !this.isLoginMode;
+		this.elems = document.querySelectorAll('.parallax');
+		this.instances = M.Parallax.init(this.elems);
 	}
 
 	ngOnDestroy() {
 		this.nightModeSubscription.unsubscribe();
 	}
+
 }

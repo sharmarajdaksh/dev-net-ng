@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Store } from '@ngrx/store';
 
 import * as fromApp from './store/app.reducer';
@@ -11,7 +11,7 @@ import { map } from 'rxjs/operators';
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnDestroy {
 	darkMode: boolean;
 	nightModeSubscription: Subscription;
 
@@ -27,16 +27,24 @@ export class AppComponent implements OnInit {
 			});
 		this.store.dispatch(new SharedActions.CheckDarkMode());
 	}
+
+	ngOnDestroy() {
+		this.nightModeSubscription.unsubscribe();
+	}
 }
 
 const onInitMaterializeJs = () => {
 	// For Collapsible List
 	let elems: any;
 	let instances: any;
+	let instance: any;
 	
 	elems = document.querySelectorAll('.collapsible');
 	instances = M.Collapsible.init(elems);
 	
 	elems = document.querySelectorAll('.sidenav');
 	instances = M.Sidenav.init(elems);
+
+	elems = document.querySelectorAll('.parallax');
+	instances = M.Parallax.init(elems);
 };
