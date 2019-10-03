@@ -34,12 +34,19 @@
                 </li>
                 <li>
                     <a
-                        class="grey-text text-darken-2"
+						class="grey-text text-darken-2"
+						data-position="bottom"
                         style="cursor: pointer;"
                         title="Toggle Night Mode"
                         (click)="onToggleNightMode()"
                         ><i class="material-icons">brightness_6</i></a
                     >
+                </li>
+                <li>
+                    <a [routerLink]="['/posts/']" class="grey-text remove-when-done">Posts</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/posts/post']" class="grey-text remove-when-done">Post</a>
                 </li>
             </ul>
         </div>

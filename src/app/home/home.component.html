@@ -1,10 +1,11 @@
 <div
-	class="parallax-container"
-    [ngClass]="{'home-light': !darkMode, 'home-dark': darkMode}"
->
-    <div class="row container right-align" style="margin-top: 10rem;">
+	class=""
+	[ngClass]="{'home-light': !darkMode, 'home-dark': darkMode}"
+	style="padding-top: 7rem; padding-bottom: 6rem;"
+	>
+    <div class="row container right-align">
         <div>
-            <h1 class="header white-text">
+            <h1 class="devnet white-text">
 				< / > DevNet
             </h1>
             <br />
@@ -29,11 +30,11 @@
             <br />
             <br />
             <a
-                class="waves-effect hoverable waves-light btn white blue-text text-lighten-1 lighten-1"
-                [routerLink]="['/auth']"
+                class="waves-effect waves-blue btn-large btn-flat white blue-text"
+				[routerLink]="['/auth']"
             >
                 Login or Signup
             </a>
-        </div>
+		</div>
     </div>
 </div>

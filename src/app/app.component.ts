@@ -37,7 +37,6 @@ const onInitMaterializeJs = () => {
 	// For Collapsible List
 	let elems: any;
 	let instances: any;
-	let instance: any;
 	
 	elems = document.querySelectorAll('.collapsible');
 	instances = M.Collapsible.init(elems);
@@ -45,6 +44,8 @@ const onInitMaterializeJs = () => {
 	elems = document.querySelectorAll('.sidenav');
 	instances = M.Sidenav.init(elems);
 
-	elems = document.querySelectorAll('.parallax');
-	instances = M.Parallax.init(elems);
+	elems = document.querySelectorAll('.tabs');
+	elems.forEach(elem => {
+		instances = M.Tabs.init(elem);
+	});
 };

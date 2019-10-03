@@ -14,7 +14,7 @@ const appRoutes: Routes = [
 		path: 'posts',
 		loadChildren: () => import('./posts/posts.module').then(m => m.PostsModule)
 	},
-	{ path: '', redirectTo: '/home', pathMatch: 'prefix' },
+	{ path: '**', redirectTo: 'home' },
 ];
 
 @NgModule({

@@ -1,16 +1,16 @@
 .dark {
-	&-background {
-		background: #333;
-	}
-	&-font-color {
-		color: #fafafa;
-	}
+    &-background {
+        background-color: #333 !important;
+    }
+    &-font-color {
+        color: #fafafa;
+    }
 }
 .light {
-	&-background {
-		background: #fafafa;
-	}
-	&-font-color {
-		color: #222;
-	}
+    &-background {
+        background-color: #fafafa !important;
+    }
+    &-font-color {
+        color: #222;
+    }
 }

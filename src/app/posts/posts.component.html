@@ -1,3 +1,17 @@
-You on Posts boih
-
-<router-outlet></router-outlet>
+<div style="padding-bottom: 5rem">
+    <div class="row">
+        <div class="col s12 tabs">
+            <ul class="tabs">
+                <li class="tab col s3 m2 offset-s3 offset-m4">
+                    <a [routerLink]="['feed']" routerLinkActive="active">Your Feed</a>
+                </li>
+                <li class="tab col s3 m2">
+                    <a [routerLink]="['explore']" routerLinkActive="active">Explore</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</div>
