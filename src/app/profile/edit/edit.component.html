@@ -1,0 +1,260 @@
+<div
+    class="container"
+    [ngClass]="{
+        'white-text': darkMode,
+        'grey-text text-darken-3': !darkMode
+    }"
+    style="padding-top: 5rem;"
+>
+    <h2 class="center">Edit profile</h2>
+    <div class="row">
+        <div class="col s12">
+            <div class="row">
+                <div class="col s12 m8 offset-m2" style="margin-bottom: 2rem;">
+                    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+                        <br />
+                        <div class="row right">
+                            <button
+                                type="submit"
+                                class="waves-effect waves-light btn green"
+                                style="margin-right: 10px;"
+                                [disabled]="!userForm.valid"
+                            >
+                                Update
+                            </button>
+                            <button
+                                class="waves-effect waves-light btn red"
+                                (click)="onCancel()"
+                            >
+                                Cancel
+                            </button>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <br />
+                            <div class="input-field col s12">
+                                <input
+                                    id="name"
+                                    type="text"
+                                    class="validate"
+                                    formControlName="name"
+                                />
+                                <label for="name" class="active">Name</label>
+                            </div>
+                        </div>
+                        <div
+                            *ngIf="userForm.get('imagePath').value !== ''"
+                            class="row center"
+                        >
+                            <br />
+                            <img
+                                src="{{ userForm.get('imagepath').value }}"
+                                alt="Did you enter a valid url?"
+                                class="circle responsive-img"
+                                style="max-height: 7rem; margin-top: 1rem;"
+                            />
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input
+                                    id="imagepath"
+                                    type="text"
+                                    class="validate"
+                                    formControlName="imagepath"
+                                />
+                                <label for="imagepath" class="active"
+                                    >Image</label
+                                >
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea
+                                    id="bio"
+                                    type="text"
+                                    class="validate materialize-textarea"
+                                    formControlName="bio"
+                                ></textarea>
+                                <label for="bio" class="active">Bio</label>
+                            </div>
+                        </div>
+                        <br />
+                        <h6>Education</h6>
+                        <div class="row">
+                            <div class="input-field col s12 m6">
+                                <input
+                                    id=""
+                                    type="text"
+                                    class="validate"
+                                    formControlName=""
+                                />
+                                <label for="" class="active"
+                                    >Program/Degree</label
+                                >
+                            </div>
+                            <div class="input-field col s12 m5">
+                                <select>
+                                    <option class="grey-text" value="" selected
+                                        >Skill level</option
+                                    >
+                                    <option value="1">Beginner</option>
+                                    <option value="2">Intermediate</option>
+                                    <option value="3">Advanced</option>
+                                </select>
+                                <label>Materialize Select</label>
+                            </div>
+                            <div class="col s3 m1 center">
+                                <button
+                                    class="waves-effect waves-light btn red"
+                                    (click)="onRemoveQualification()"
+                                >
+                                    Remove
+                                </button>
+                            </div>
+                            <button
+                                class="waves-effect waves-light btn green"
+                                (click)="onAddQualification()"
+                            >
+                                Add Qualification
+                            </button>
+                        </div>
+                        <br />
+                        <h6>Work Experience</h6>
+                        <div class="row">
+                            <div class="input-field col s12 m5">
+                                <input
+                                    id=""
+                                    type="text"
+                                    class="validate"
+                                    formControlName=""
+                                />
+                                <label for="" class="active">Role</label>
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <input
+                                    id=""
+                                    type="text"
+                                    class="validate"
+                                    formControlName=""
+                                />
+                                <label for="" class="active"
+                                    >Organization</label
+                                >
+                            </div>
+                            <div class="col s3 m1 center">
+                                <button
+                                    class="waves-effect waves-light btn red"
+                                    (click)="onRemoveQualification()"
+                                >
+                                    Remove
+                                </button>
+                            </div>
+                            <button
+                                class="waves-effect waves-light btn green"
+                                (click)="onAddQualification()"
+                            >
+                                Add Qualification
+                            </button>
+                        </div>
+                        <br />
+                        <h6>Skills</h6>
+                        <div class="row">
+                            <div class="input-field col s12 m6">
+                                <input
+                                    id=""
+                                    type="text"
+                                    class="validate"
+                                    formControlName=""
+                                />
+                                <label for="" class="active">Skill</label>
+                            </div>
+                            <div class="input-field col s12 m5">
+                                <select>
+                                    <option class="grey-text" value="" selected
+                                        >Skill level</option
+                                    >
+                                    <option value="1">Beginner</option>
+                                    <option value="2">Intermediate</option>
+                                    <option value="3">Advanced</option>
+                                </select>
+                                <label>Materialize Select</label>
+                            </div>
+                            <div class="col s3 m1 center">
+                                <button
+                                    class="waves-effect waves-light btn red"
+                                    (click)="onRemoveSkill()"
+                                >
+                                    Remove
+                                </button>
+                            </div>
+                            <button
+                                class="waves-effect waves-light btn green"
+                                (click)="onAddSkill()"
+                            >
+                                Add Skill
+                            </button>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input
+                                    id="facebook"
+                                    type="text"
+                                    class="validate"
+                                    formControlName="facebook"
+                                />
+                                <label for="facebook" class="active"
+                                    >Link to facebook profile</label
+                                >
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input
+                                    id="twitter"
+                                    type="text"
+                                    class="validate"
+                                    formControlName="twitter"
+                                />
+                                <label for="twitter" class="active"
+                                    >Link to Twitter profile</label
+                                >
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input
+                                    id="linkedin"
+                                    type="text"
+                                    class="validate"
+                                    formControlName="linkedin"
+                                />
+                                <label for="linkedin" class="active"
+                                    >Link to Linkedin profile</label
+                                >
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input
+                                    id="github"
+                                    type="text"
+                                    class="validate"
+                                    formControlName="github"
+                                />
+                                <label for="github" class="active"
+                                    >Link to github page</label
+                                >
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

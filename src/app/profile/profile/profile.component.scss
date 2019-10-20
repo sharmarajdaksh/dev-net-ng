@@ -1,0 +1,26 @@
+.collection-title {
+    font-size: 1.3rem;
+}
+
+.social-icon {
+    
+    &-facebook:hover {
+    color: #3b5998;
+    }
+
+    &-twitter:hover {
+    color: #55acee;
+   }
+   &-linkedin:hover {
+    color: #007bb5;
+   }
+   &-github:hover {
+    color: #8d42d3;
+   }
+   transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+
+}
