@@ -4,18 +4,18 @@ import { PostsRoutingModule } from './posts-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { FeedComponent } from './feed/feed.component';
 import { CreateComponent } from './create/create.component';
-import { ExploreComponent } from './explore/explore.component';
 import { PostsComponent } from './posts.component';
 import { RouterModule } from '@angular/router';
+import { DiscussionsComponent } from './discussions/discussions.component';
 
 @NgModule({
 	declarations: [
 		PostComponent,
 		FeedComponent,
 		CreateComponent,
-		ExploreComponent,
-		PostsComponent
+		PostsComponent,
+		DiscussionsComponent
 	],
-	imports: [PostsRoutingModule, SharedModule, PostsRoutingModule, RouterModule]
+	imports: [PostsRoutingModule, SharedModule, RouterModule]
 })
 export class PostsModule {}

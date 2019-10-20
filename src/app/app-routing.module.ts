@@ -13,7 +13,11 @@ const appRoutes: Routes = [
 	{
 		path: 'posts',
 		loadChildren: () => import('./posts/posts.module').then(m => m.PostsModule)
-	},
+    },
+    {
+        path: 'profile',
+		loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule)
+    },
 	{ path: '**', redirectTo: 'home' },
 ];
 

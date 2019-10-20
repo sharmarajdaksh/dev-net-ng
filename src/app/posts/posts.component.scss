@@ -1,28 +1,5 @@
 @import '../../styles';
 
 .row {
-	background-color: #888;
+	background-color: #bbb;
 }
-
-
-
-.tabs, .tabs .tab a{
-	color:#dfdfdf !important;
-	background-color: #888 !important;
-}
-
-.tabs .tab a:hover {
-	background-color:#999 !important;
-	color:#fff !important;
-}
-
-.tabs .tab a.active {
-	background-color:#aaa !important;
-	color:#fff !important;
-} /*Background and text color when a tab is active*/
-
-// .indicator {
-// 	background-color:#000 !important;
-// 	color: #ddd !important;
-// 	outline-color: #ddd !important;
-// } /*Color of underline*/

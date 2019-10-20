@@ -15,8 +15,8 @@ import { environment } from 'src/environments/environment';
 import * as fromApp from './store/app.reducer';
 import { SharedEffects } from './shared/store/shared.effects';
 import { FooterComponent } from './footer/footer.component';
-import { AuthComponent } from './auth/auth.component';
 import { HomeComponent } from './home/home.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
 	declarations: [
@@ -30,6 +30,7 @@ import { HomeComponent } from './home/home.component';
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
+		SharedModule,
 		StoreModule.forRoot(fromApp.appReducer),
 		EffectsModule.forRoot([SharedEffects]),
 		StoreDevtoolsModule.instrument({ logOnly: environment.production }),

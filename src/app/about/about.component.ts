@@ -2,7 +2,6 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Store } from '@ngrx/store';
 
 import * as fromApp from '../store/app.reducer';
-import * as SharedActions from '../shared/store/shared.actions';
 import { Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
 

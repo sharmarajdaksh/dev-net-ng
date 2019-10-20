@@ -14,9 +14,6 @@ export class HomeComponent implements OnInit, OnDestroy {
 	darkMode: boolean;
 	nightModeSubscription: Subscription;
 
-	elems: any;
-	instances: any;
-
 	constructor(private store: Store<fromApp.AppState>) {}
 
 	ngOnInit() {
@@ -26,9 +23,6 @@ export class HomeComponent implements OnInit, OnDestroy {
 			.subscribe((darkMode: boolean) => {
 				this.darkMode = darkMode;
 			});
-
-		this.elems = document.querySelectorAll('.parallax');
-		this.instances = M.Parallax.init(this.elems);
 	}
 
 	ngOnDestroy() {

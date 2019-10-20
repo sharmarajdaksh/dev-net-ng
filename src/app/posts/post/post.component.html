@@ -1,1 +1,169 @@
-<p>post works!</p>
+<div
+    class="container"
+    style="padding-top: 6rem; padding-bottom: 6rem;"
+    [ngClass]="{
+        'white-text': darkMode,
+        'grey-text text-darken-3': !darkMode
+    }"
+>
+    <div class="row">
+        <h1 class="title" style="margin-top: 0; font-weight: bold;">
+            Title Goes Here. It can be fairly long without being ugly.
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col s12 m7 offset-m1" style="margin-bottom: 2rem;">
+            <div class="col s3 m2">
+                <img
+                    src="/assets/images/developers/dex.png"
+                    alt="AuthorName Singhpreet"
+                    class="circle responsive-img"
+                    style="max-height: 5rem;"
+                />
+            </div>
+            <div class="col s9 m5">
+                <h5>Kamalpreet Sins Aujla</h5>
+                <span style="font-size: 0.8rem;">15 August 2019</span>
+            </div>
+        </div>
+        <div class="col s12 m3">
+            <span
+                class="btn-small blue"
+                style="margin-right:2px; margin-bottom: 2px;"
+                >tag1</span
+            >
+            <span
+                class="btn-small blue"
+                style="margin-right:2px; margin-bottom: 2px;"
+                >incessantlylong</span
+            >
+            <span class="btn-small blue">deepLearning</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m8 offset-m2 flow-text">
+            <h1>This is not the heading</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                dignissim tincidunt est, at efficitur quam posuere in. Curabitur
+                in nisi non tortor eleifend sodales pretium egestas lorem. Nulla
+                elementum felis eu eros eleifend, eu lacinia libero gravida.
+                Pellentesque lacinia, lectus ut commodo fringilla, nulla tellus
+                pulvinar lectus, in cursus nunc enim at leo. Nunc in eros dolor.
+                Nulla dui dui, laoreet ut dolor sed, luctus dignissim est. In
+                sit amet enim vitae dolor commodo auctor. Duis faucibus felis eu
+                ullamcorper scelerisque. Pellentesque non erat nisi. Maecenas
+                semper mauris vitae nunc vehicula, quis volutpat ipsum
+                fermentum. Maecenas diam justo, tempus mattis vestibulum nec,
+                euismod a leo. Donec blandit imperdiet tincidunt. Nam sed
+                tincidunt nisl.
+            </p>
+            <p>
+                Nunc sit amet ante eget erat scelerisque facilisis. Phasellus ac
+                semper ante, id consequat lacus. Cras dignissim ex lorem, eget
+                laoreet quam aliquet nec. Duis nec urna quis massa tristique
+                finibus at ornare quam. Sed non mi lorem. Sed pretium rutrum
+                mattis. Phasellus quis neque orci. Proin lacinia fermentum
+                ipsum, eu aliquet quam semper vel. Morbi imperdiet finibus felis
+                ut commodo. Suspendisse mattis orci non justo tincidunt sodales.
+            </p>
+            <p>
+                Praesent nec justo et ipsum facilisis gravida vitae a lectus.
+                Cras sapien justo, lacinia ac orci non, consequat mollis dolor.
+                Proin pulvinar est a semper hendrerit. Curabitur justo lacus,
+                convallis non pharetra vitae, maximus vitae enim. Nunc pulvinar
+                quis enim vel elementum. Quisque mollis dui sit amet malesuada
+                varius. Fusce porttitor, augue et congue dignissim, metus felis
+                gravida ipsum, vel tempus felis justo et risus. Suspendisse
+                tellus arcu, placerat eget augue quis, lacinia laoreet urna.
+                Donec convallis at ipsum sit amet vulputate. Curabitur laoreet
+                justo magna, sit amet porta arcu scelerisque id. Quisque eros
+                nunc, vestibulum vitae volutpat sit amet, auctor sed ex.
+            </p>
+            <blockquote>
+                Random cool quote that author wants to quote
+            </blockquote>
+            <p>
+                Duis et sem eget elit facilisis eleifend non et justo. Nunc ut
+                volutpat lorem, in eleifend orci. Suspendisse potenti. Sed
+                finibus dolor ac ligula ornare, in cursus felis tincidunt. Cras
+                sit amet turpis rutrum ante porttitor porta. Donec eget libero
+                id massa tincidunt lacinia. Nulla facilisi. Pellentesque in
+                dignissim est. Curabitur sit amet ligula ultrices, suscipit
+                lacus a, gravida risus. Vivamus ac diam nec massa dictum
+                suscipit. Etiam eleifend dolor quis dolor tincidunt feugiat.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+            <div class="collection">
+                <div class="col s2 offset-s1">
+                    <img
+                        src="/assets/images/developers/dex.png"
+                        alt="AuthorName Singhpreet"
+                        class="circle responsive-img"
+                        style="max-height: 5rem; margin-top: 1.2rem;"
+                    />
+                </div>
+                <div class="col s8" style="margin-bottom: 1rem;">
+                    <h5>Kamalpreet Sins Aujla</h5>
+                    <span
+                        >A long description of the author, which i think we will
+                        fetch from the user's profile bio or something.</span
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+            <div
+                class="collection center center-align blue-text"
+                style="padding-top: 1rem; padding-bottom: 1rem; border-color: #42a5f5"
+            >
+                See post discussions
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <br />
+        <br />
+        <h3>More from DevNet</h3>
+        <hr />
+        <br />
+        <div class="col s12 m4">
+            <div class="card" [ngClass]="{ 'grey lighten-1': darkMode }">
+                <div class="card-image" style="max-height: 22rem;">
+                    <img
+                        src="assets/images/network.jpeg"
+                        style="max-height: 22rem;"
+                    />
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Card Title</span>
+                    <hr />
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="col s3 m4 l3">
+                                <img
+                                    src="/assets/images/developers/dex.png"
+                                    alt="AuthorName Singhpreet"
+                                    class="circle responsive-img"
+                                    style="max-height: 3.5rem; margin-top: 0.5rem;"
+                                />
+                            </div>
+                            <div class="col s9 m8 l9">
+                                <h6><strong>Kamalpreet Sins Aujla</strong></h6>
+                                <span style="font-size: 0.7rem;"
+                                    >15 August 2019</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

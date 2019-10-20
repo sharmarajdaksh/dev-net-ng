@@ -1,1 +1,473 @@
-<p>feed works!</p>
+<div
+    class="row"
+    style="position: relative;"
+    [ngClass]="{
+        'white-text': darkMode,
+        'grey-text text-darken-3': !darkMode
+    }"
+>
+    <div class="col s12 m4 right side-fixed" style="padding-top: 1rem;">
+        <div class="row">
+            <h6>
+                Popular on DevNet
+            </h6>
+            <hr />
+            <div>
+                <a
+                    href="#!"
+                    class=" lighten-1"
+                    [ngClass]="{
+                        grey: darkMode,
+                        'white-text': darkMode,
+                        'grey-text text-darken-2': !darkMode
+                    }"
+                >
+                    <div class="col s1">
+                        <h5>1</h5>
+                    </div>
+                    <div class="col s11">
+                        <h6><strong>Highest rated item on DevNet</strong></h6>
+                        By Nigga Edward <br />
+                        <span style="font-size: 0.5rem;">12 October 2019</span>
+                    </div>
+                </a>
+                <a
+                    href="#!"
+                    class=" lighten-1"
+                    [ngClass]="{
+                        grey: darkMode,
+                        'white-text': darkMode,
+                        'grey-text text-darken-2': !darkMode
+                    }"
+                >
+                    <div class="col s1">
+                        <h5>1</h5>
+                    </div>
+                    <div class="col s11">
+                        <h6><strong>Highest rated item on DevNet</strong></h6>
+                        By Nigga Edward <br />
+                        <span style="font-size: 0.5rem;">12 October 2019</span>
+                    </div>
+                </a>
+                <a
+                    href="#!"
+                    class=" lighten-1"
+                    [ngClass]="{
+                        grey: darkMode,
+                        'white-text': darkMode,
+                        'grey-text text-darken-2': !darkMode
+                    }"
+                >
+                    <div class="col s1">
+                        <h5>1</h5>
+                    </div>
+                    <div class="col s11">
+                        <h6><strong>Highest rated item on DevNet</strong></h6>
+                        By Nigga Edward <br />
+                        <span style="font-size: 0.5rem;">12 October 2019</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <h6
+            [ngClass]="{
+                'white-text': darkMode,
+                'grey-text text-darken-3': !darkMode
+            }"
+        >
+            Most liked
+        </h6>
+        <hr />
+        <h6
+            [ngClass]="{
+                'white-text': darkMode,
+                'grey-text text-darken-3': !darkMode
+            }"
+        >
+            Controversial
+        </h6>
+        <hr />
+        <h6
+            [ngClass]="{
+                'white-text': darkMode,
+                'grey-text text-darken-3': !darkMode
+            }"
+        >
+            Search DevNet
+        </h6>
+        <hr />
+        <div style="font-size: 0.6rem">
+            <a href="">Home</a>
+            | <a href="">Profile</a> | <a href="">Submit Post</a> |
+            <a href="">Toggle Theme</a><br />
+            <a href="">About</a> | <a href="">Privacy Policy</a>
+        </div>
+    </div>
+
+    <div class="col s12 m8">
+        <h5
+            [ngClass]="{
+                'white-text': darkMode,
+                'grey-text text-darken-3': !darkMode
+            }"
+        >
+            Recommended for you
+        </h5>
+        <hr />
+        <br />
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">++Recommendation</a>
+                    <a href="#">--Recommendation</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Recommendation++</a>
+                    <a href="#">Recommendation--</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal lighten-1" [ngClass]="{ grey: darkMode }">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6" />
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        I am a very simple card. I am good at containing small
+                        bits of information.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Like Similar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -3,20 +3,22 @@ import { RouterModule, Routes } from '@angular/router';
 import { FeedComponent } from './feed/feed.component';
 import { PostsComponent } from './posts.component';
 import { CreateComponent } from './create/create.component';
-import { ExploreComponent } from './explore/explore.component';
 import { PostComponent } from './post/post.component';
+import { DiscussionsComponent } from './discussions/discussions.component';
 
 const routes: Routes = [
 	{
 		path: 'post',
-		component: PostComponent
+		children: [
+			{ path: '', component: PostComponent },
+			{ path: 'discussions', component: DiscussionsComponent }
+		]
 	},
 	{
 		path: '',
 		component: PostsComponent,
 		children: [
 			{ path: 'feed', component: FeedComponent },
-			{ path: 'explore', component: ExploreComponent },
 			{ path: 'create', component: CreateComponent },
 			{ path: '**', redirectTo: 'feed' }
 		]
